@@ -11,6 +11,7 @@ html {
   background-color: #383838;
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
   
 
 }
