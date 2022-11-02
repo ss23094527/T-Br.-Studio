@@ -4,6 +4,7 @@ html {
     background-color: #383838;
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
     
   
   }
@@ -15,6 +16,7 @@ html {
   }
   
   body {
+   
     font-family: 'Poiret One', cursive;
     font-size: 10px;
     position: relative;
@@ -83,7 +85,7 @@ html {
   
   .nav-list .logo{
   
-    margin-left: -620px;
+    margin-left: -750px;
   }
   
   .nav-list{
@@ -95,8 +97,8 @@ html {
     display: flex;
   margin-top: -10px;
   align-items: center;
-    margin-left: -565px;
-    padding-left: 663px;
+    margin-left: -621px;
+    padding-left: 790px;
     width: 1280px;
     height: 70px;
   }
@@ -243,7 +245,7 @@ transition: transform ease .8s;
       position: relative;
      width: 296px;
      height: 400px;
-      left: -30px;
+      left: -10px;
      
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -293,10 +295,10 @@ transition: transform ease .8s;
   transform: rotateY(0deg);
 }
 
-    .boxx2{
+.boxx2{
       position: absolute;
   
-      left: -30px;
+      left: -10px;
       top: 0px;
       margin-left:30px ;
      
@@ -311,7 +313,7 @@ transition: transform ease .8s;
         position: absolute;
         width: 190px;
         height: 230px;
-    left: 350px;
+    left: 380px;
     top: 300px;
     
  
@@ -321,7 +323,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 190px;
       height: 230px;
-  left: 349px;
+  left: 379px;
   top: 300px;
   z-index: -1;
 
@@ -349,7 +351,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 230px;
       height: 345px;
-      left: -30px;
+      left: 60px;
       top: 0px;
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -399,7 +401,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 230px;
       height: 345px;
-      left: -30px;
+      left: 90px;
       top: 0px;
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -475,7 +477,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 230px;
       height: 345px;
-      left: -30px;
+      left: -20px;
       top: 0px;
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -524,7 +526,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 230px;
       height: 345px;
-      left: -30px;
+      left: 20px;
       top: 0px;
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -573,7 +575,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 230px;
       height: 345px;
-      left: -30px;
+      left: 60px;
       top: 0px;
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -625,7 +627,7 @@ transition: transform ease .8s;
       position: absolute;
       width: 230px;
       height: 345px;
-      left: -30px;
+      left: 100px;
       top: 0px;
       margin-left:30px ;
       transform: rotateY(0deg);
@@ -712,7 +714,7 @@ transition: transform ease .8s;
         position: absolute;
     width: 521px;
     height: 376px;
-    left: 637px;
+    left: 730px;
     top: 1566px;
     border-radius: 30px;
     }
@@ -738,7 +740,7 @@ transition: transform ease .8s;
         position: absolute;
     width: 290px;
     height: 27px;
-    left: 760px;
+    left: 860px;
     top: 1956px;
     
     font-family: 'Noto Serif TC';;
@@ -768,7 +770,7 @@ transition: transform ease .8s;
        
         top: 2020px;
     
-    left: 670px;
+    left: 770px;
   
     
     }
@@ -777,9 +779,9 @@ transition: transform ease .8s;
 
 .footer1{
     background-color: #B8B4AF;
-    margin-left: -1185px;
+    margin-left: -1260px;
     margin-top: 2200px;
-    width: 1206px;
+    width: 100%;
     height: 83px;
       position: absolute;
      display: block;
@@ -792,7 +794,7 @@ transition: transform ease .8s;
      margin: 10px;
         position: absolute;
         margin-top: 20px;
-        margin-left: 1000px;
+        margin-left: 1100px;
         margin-right: 50px;
        display: flex;
       
@@ -820,6 +822,7 @@ transition: transform ease .8s;
         }
     
       .menu{
+        font-size: 13px;
         font-family: adamina;
     display: flex;
     margin-top: 35px;

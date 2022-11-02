@@ -7,15 +7,15 @@ html {
     background-color: #353131;
     box-sizing: border-box;
     margin: 0;
-overflow-x: hidden;
-    
+    overflow-x: hidden;
+    width: 1280px;
   
 }
 
 *,
 *:before,
 *:after {
-
+  
     box-sizing: inherit;
 }
 
@@ -34,12 +34,13 @@ overflow-x: hidden;
 }
 
 body {
-  width: 100%;
+  width: 1280px;
     font-family: 'Noto Serif TC', cursive;
     font-size: 10px;
-    position: relative;
+    position: absolute;
     cursor:url('https://cur.cursors-4u.net/special/spe-2/spe114.cur'),pointer ;
-
+    overflow-x: hidden;
+    
 }
 
 
@@ -59,10 +60,10 @@ body {
 }
 
 #status {
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   position: absolute;
-  left: 36%;
+  left: 35%;
   /* centers the loading animation horizontally one the screen */
   top: 25%;
   /* centers the loading animation vertically one the screen */
@@ -108,9 +109,9 @@ body {
   }
 }
 .waveWrapper {
-  width: 1205px;
+  width: 1280px;
 
-  margin-left: 50px;
+  
   position: absolute;
   left: 0;
   right: 0;
@@ -122,10 +123,10 @@ body {
 .waveWrapperInner {
   position: absolute;
   width: 100%;
-  overflow: hidden;
+  
   left: 30px;
   height: 100%;
-  bottom: 3400px;
+  bottom: 3360px;
  
 }
 .bgTop {
@@ -149,7 +150,7 @@ body {
   transform-origin: center bottom;
 }
 .waveTop {
-  background-size: 50% 100px;
+  background-size: 100% 100px;
 }
 .waveAnimation .waveTop {
 animation: move-wave 3s;
@@ -228,7 +229,7 @@ animation: move-wave 3s;
 
 .nav-list .logo{
 
-    margin-left: -1220px;
+    margin-left: -1470px;
 }
 
 .nav-list{
@@ -240,9 +241,9 @@ float:right;
     display: flex;
 margin-top: -10px;
 align-items: center;
-    margin-left:11px;
-    padding-left: 700px;
-    width: 100%;
+    margin-left:-20px;
+    padding-left: 810px;
+    width: 1280px;;
     height: 70px;
    
     align-items: center;
@@ -314,7 +315,7 @@ body {
   text-align: center;
   width: 200px;
   margin: 150px auto 0 auto;
-  perspective: 1150px;
+  perspective: 1000px;
  
 }
 
@@ -409,13 +410,13 @@ span {
 /*PAINTERS*/
 .about{
   width: 100%;
-
+margin-left: -40px;
   height: 100%;
   padding: 0;
   background-color: #403f3c;
   font-size :  20px;
   position : absolute;
-  margin-top: 550px;
+  margin-top: 590px;
   text-align: left;
  
   
@@ -474,7 +475,7 @@ text-decoration-line: none;
 .about h1{
  
   margin-top: 270PX;
-  margin-left: 574px;
+  margin-left: 614px;
 font-size: 30px;
 
   position: absolute;
@@ -498,7 +499,7 @@ font-size: 30px;
 
 .painter-icon-A{
   margin-top: 140px;
-  margin-left:120px ;
+  margin-left:200px ;
   transform:scale(1,1);
 position: relative;
   display: block;
@@ -537,7 +538,7 @@ position: relative;
   .about_title{
     font-family: 'Noto Serif TC';
   margin-top: -20px;
-    margin-left: 135px;
+    margin-left: 225px;
     animation: scaleDown 0.5s;
   animation-timing-function: ease ;
   animation-fill-mode:forwards;
@@ -560,16 +561,19 @@ position: relative;
  
 
 .portfolio{
-  margin: 0;
+border-color: #f9f6f6 ;
+
   margin-top: 1150px;
   position: relative;
-  width: 1120px;
+  width: 1180px;
+  background-color: #2f2e2e;
  height: 2800px;
  z-index: 999;
 
 }
 
   .portfolio h2{
+
     margin-left: 50px;
     font-family: 'adamina';
     font-size: 25px;
@@ -715,7 +719,7 @@ text-decoration-line: none;
 position: absolute;
 width: 358px;
 height: 65px;
-left: 446px;
+left: 506px;
 top: 4401px;
 font-size: 22px;
 
@@ -748,7 +752,8 @@ button {
 .footer1{
 background-color: #B8B4AF;
 margin-top: 4500px;
-width: 1206px;
+margin-left: 50px;
+width: 1280px;
 height: 83px;
   position: absolute;
  display: block;
@@ -761,7 +766,7 @@ height: 83px;
  margin: 10px;
     position: absolute;
     margin-top: 20px;
-    margin-left: 1000px;
+    margin-left: 1100px;
     margin-right: 50px;
    display: flex;
   
@@ -789,6 +794,7 @@ height: 83px;
     }
 
   .menu{
+    font-size: 13px;
     font-family: 'Noto Serif TC';
 display: flex;
 margin-top: 35px;
