@@ -242,7 +242,7 @@ margin-top: -10px;
 align-items: center;
     margin-left: -80px;
     padding-left: 748px;
-    width: 1240px;
+    width: 1280px;
     height: 70px;
    
     align-items: center;
@@ -409,7 +409,7 @@ span {
 /*PAINTERS*/
 .about{
   
-  width: 1160px;
+  width: 1280px;
   height: 100%;
   padding: 0;
   background-color: #403f3c;
@@ -563,7 +563,7 @@ position: relative;
   margin: 0;
   margin-top: 1150px;
   position: relative;
-  width: 1130px;
+  width: 1280px;
  height: 2800px;
  z-index: 999;
   background-color: rgb(78, 76, 73);
