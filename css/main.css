@@ -36,7 +36,7 @@ html {
 body {
     font-family: 'Noto Serif TC', cursive;
     font-size: 10px;
-    position: relative;
+    position: absolute;
 
     cursor:url('https://cur.cursors-4u.net/special/spe-2/spe114.cur'),pointer ;
 
