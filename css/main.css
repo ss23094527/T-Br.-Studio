@@ -7,7 +7,7 @@ html {
     background-color: #353131;
     box-sizing: border-box;
     margin: 0;
-
+overflow-x: hidden;
     
   
 }
