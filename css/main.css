@@ -109,7 +109,7 @@ body {
 }
 .waveWrapper {
   width: 1205px;
-  overflow:hidden;
+
   margin-left: 50px;
   position: absolute;
   left: 0;
@@ -242,7 +242,7 @@ margin-top: -10px;
 align-items: center;
     margin-left: -80px;
     padding-left: 748px;
-    width: 1280px;
+    width: 1160px;
     height: 70px;
    
     align-items: center;
