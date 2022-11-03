@@ -103,7 +103,7 @@ float:right;
   display: flex;
 margin-top: -10px;
 align-items: center;
-  margin-left: -61px;
+  margin-left: -6px;
   padding-left: 810px;
   width: 1280px;
   height: 70px;
@@ -172,13 +172,14 @@ display: flex;
 
 /*main*/
 
+
 .about-us-word{
   position: absolute;
 
   white-space:nowrap;
-left: 100px;
+left: 200px;
 top: 120px;
-font-family: 'Adamina';
+font-family: 'Noto serif TC';
 font-style: normal;
 
 font-size: 36px;
@@ -205,7 +206,7 @@ color: #FFFFFF;
   position: absolute;
   width: 245px;
   height: 303px;
-  left: 101px;
+  left: 200px;
   top: 255px;
   animation:  fadein 3s ease-in;
   
@@ -223,8 +224,8 @@ color: #FFFFFF;
 
 width: 1ch;
 height: 3ch;
-left: 409px;
-top: 283px;
+left: 550px;
+top: 250px;
 text-align: left;
 
 font-family: 'Noto Serif TC';
@@ -235,7 +236,7 @@ line-height: 44px;
 letter-spacing: 0.095em;
 overflow: hidden;
 color: #FFFFFF;
-animation: 2s typing steps(51, jump-none) forwards ;
+animation: 2s typing steps(40, jump-none) forwards ;
  
 
 
@@ -266,15 +267,280 @@ height: 20ch;
     
 }
 
+.custom-btn {
+  margin-left: 240px;
+  margin-top: 230px;
+  width: 350px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+ 
+  padding: 10px 25px;
+  font-family: 'Noto Serif TC';
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  
+  outline: none;
 
-.very-long-line{
+}
+
+/* 1 */
+.btn-1 {
+  font-size: 16PX;
+  font-weight: bold;
+  text-align: center;
+  
+  background: rgb(152, 150, 150);
+  background: linear-gradient(0deg, rgb(49, 47, 47) 0%, rgb(42, 42, 44) 100%);
+  border: none;
+}
+.btn-1:hover {
+ color: #7a7a7a;
+   background: rgb(135, 135, 141);
+background: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(51, 51, 51) 100%);
+}
+
+
+/*container*/
+
+.about-us-container{
   position: absolute;
-width: 739px;
+  display: block;
+ width: 110%;
+ height: 530px;
+ background-color: #575653;
+ box-shadow: 10px 5px 5px rgb(49, 49, 49);
+  top: 630px;
+  color: #ffffff;
+  font-family: 'Noto serif TC';
+ padding-left:100px;
+}
 
-left: 409px;
-top: 511.5px;
+.about-us-container-text{
+  margin-left: 40px;
+  margin-top: 40px;
+  text-align: left;
+  font-size: 30px;
+  white-space: nowrap;
+  animation:  fadein 2s ease-in-out;
+}
+
+.about-us-card-body{
+  width: 100%;
+  animation:  fadein 2s ease-in-out;
+  margin: 0px;
+  padding: 30px;
+  margin-right: 40px;
+  display: flex;
+}
+
+.about-us-card-body img{
+  margin-top: -50px;
+margin-right: -70px;
+}
+
+.about-us-card-body :hover img{
+  transform:translateY(-20px) scale(1);
+  opacity: 1;
+  transition: .6s;
+
+}
 
 
+.card-body1{
+  margin-top: 30px;
+ margin-right: 70px;
+}
+
+.card-body2{
+  margin-top: 30px;
+  margin-right: 100px;
+ }
+ .card-body3{
+  margin-top: 30px;
+  margin-right: 100px;
+ }
+ .card-body4{
+  margin-top: 30px;
+  margin-right: 100px;
+ }
+
+ .card-title{
+
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+
+ }
+
+ .card-text{
+  margin: -10px;
+  text-align: center;
+  font-size: 13px;
+ }
+
+ /*如何委託*/
+
+ .how-to-commision-page{
+  position: absolute;
+  margin: 0;
+  top:500px;
+margin-left: -52px;
+width: 100%;
+height: 1820px;
+background-color: #292928;
+
+}
+
+.how-to-commision-page img{
+  animation: moveToLeft 1s ease-in-out;
+  width: 800px;
+  margin-top: -250px;
+  margin-left: 400px;
+}
+
+.commision-page-body1 :hover {
+  transform:translateY(-20px) scale(1);
+  opacity: 1;
+  transition: .6s;
+}
+.commision-page-body2 :hover {
+  transform:translateY(-20px) scale(1);
+  opacity: 1;
+  transition: .6s;
+}
+.commision-page-body3 :hover {
+  transform:translateY(-20px) scale(1);
+  opacity: 1;
+  transition: .6s;
+}
+
+.commision-page-body2 img{
+ 
+margin-top: -250px;
+  margin-left: 60px;
+  animation: moveToRight 1s ease-in-out;
+}
+
+
+
+.how-to-commision-page-text{
+  margin-top: 100px;
+  margin-left: 70px;
+font-size: 30px;
+animation: moveToRight 1s ease-in-out;
+}
+
+.stepbutton1{
+  margin-top: 170px;
+  text-align: center;
+font-family: 'adamina';
+  font-size: 15px;
+  width: 76px;
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  background-color: #454545;
+  box-shadow: 5px 5px 5px rgb(49, 49, 49);
+  margin-left: 70px;
+  animation: moveToRight 1s ease-in-out;
+ 
+}
+
+.stepbutton-2{
+
+font-family: 'adamina';
+margin-top: 270px;
+  font-size: 15px;
+  width: 76px;
+  text-align: center;
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  background-color: #454545;
+  box-shadow: 5px 5px 5px rgb(49, 49, 49);
+  margin-left: 890px;
+  animation: moveToLeft 1s ease-in-out;
+ 
+}
+.stepbutton-3{
+  margin-top: 260px;
+  text-align: center;
+font-family: 'adamina';
+  font-size: 15px;
+  width: 76px;
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  background-color: #454545;
+  box-shadow: 5px 5px 5px rgb(49, 49, 49);
+  margin-left: 70px;
+  animation: moveToRight 1s ease-in-out;
+ 
+}
+
+.px-1{
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 20px;
+  animation: moveToRight 1s ease-in-out;
+}
+.py-1{
+  margin-left: 80px;
+  margin-top:-10px;
+  font-size: 15px;
+  animation: moveToRight 1s ease-in-out;
+}
+
+.px-2{
+  margin-left: 900px;
+  margin-top: 30px;
+  font-size: 20px;
+  animation: moveToLeft 1s ease-in-out;
+}
+.py-2{
+  margin-left: 900px;
+  margin-top:-10px;
+  font-size: 15px;
+  animation: moveToLeft 1s ease-in-out;
+}
+
+.px-3{
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 20px;
+  animation: moveToRight 1s ease-in-out;
+}
+.py-3{
+  margin-left: 80px;
+  margin-top:-10px;
+  font-size: 15px;
+  animation: moveToRight 1s ease-in-out;
+}
+
+
+/*TOTORU*/
+
+.totorutitle{
+  animation: moveToRight 1s ease-in-out;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-family: 'Noto serif TC';
+  margin-top: 680px;
+  margin-left: 120px;
+
+}
+
+.about-totoru{
+  position: absolute;
+  margin-left: 80px;
+  margin-top:2400px;
+  z-index: 999;
 }
 
 .short-line-t{
@@ -370,6 +636,15 @@ animation: moveToLeft 1s ease-in-out;
   opacity: 1;
   transition: .6s;
  
+}
+
+/*brown*/
+
+.about-brown{
+position: relative;
+  margin-top: 2400px;
+ right: 550px;
+ z-index: 999;
 }
 
 .short-line-b{
@@ -539,8 +814,8 @@ animation: moveToRight 1s ease-in-out;
   position: absolute;
 width: 278px;
 height: 49px;
-left: 290px;
-top: 1770px;
+left: 280px;
+top: 4250px;
 
 font-family: 'Adamina';
 font-style: normal;
@@ -558,13 +833,13 @@ color: #FFFFFF;
 #contact {
   
   
-
-  margin-right:200px;
+position: relative;
+  right:350px;
   overflow: auto;
 }
 #contact #form {
 
-  margin-top: 1860px;
+  margin-top: 1950px;
   width:800px;
   
   float:left;
@@ -643,6 +918,11 @@ color: #FFFFFF;
 
 /*繪師資訊*/
 
+.inform{
+  position: relative;
+  right: 630px;
+top: -2300px;
+}
 
 .totoru-inform{
   position: absolute;
@@ -814,8 +1094,8 @@ animation: fadein 2s ease-in;
 
 .footer1{
   background-color: #B8B4AF;
-  margin-top: 2700px;
-  margin-left: 40px;
+  margin-top: 400px;
+  margin-left: -600px;
   width: 100%;
   height: 83px;
     position: absolute;

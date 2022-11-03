@@ -5,11 +5,57 @@ $(document).scroll(function () {
 
 	
 
+	if (y > 360 ) {
+        $('.about-us-card-body').fadeIn();
+		$('.about-us-container-text').fadeIn();
+		
+      
+    } else {
+		$('.about-us-card-body').fadeOut();
+		$('.about-us-container-text').fadeOut();
+	
+    }
 
-    if (y > 450 ) {
+	if (y > 650 ) {
+        $('.commision-page-body1').fadeIn();
+		
+	
+		
+      
+    } else {
+		$('.commision-page-body1').fadeOut();
+	
+	
+    }
+
+
+	if (y > 800 ) {
+        $('.commision-page-body2').fadeIn();
+	
+		
+      
+    } else {
+		$('.commision-page-body2').fadeOut();
+	
+	
+    }
+
+	if (y > 900 ) {
+        $('.commision-page-body3').fadeIn();
+	
+		
+      
+    } else {
+		$('.commision-page-body3').fadeOut();
+	
+	
+    }
+
+    if (y > 2550 ) {
         $('.totoru-introduce').fadeIn();
 		$('.head-icon-t').fadeIn();
 		$('.totoru').fadeIn();
+
       
     } else {
 		$('.totoru-introduce').fadeOut();
@@ -20,7 +66,7 @@ $(document).scroll(function () {
 
 
 
-	if (y > 900 ) {
+	if (y > 3050 ) {
         $('.browncofe-introduce').fadeIn();
 		$('.browncofe-icon').fadeIn();
 		$('.browncofe').fadeIn();
@@ -35,7 +81,7 @@ $(document).scroll(function () {
     }
 
 
-	if (y > 2000 ) {
+	if (y > 4500 ) {
         $('.totoru-inform').fadeIn();
 		$('.totoru-gmail').fadeIn();
 		$('.totoru-phone').fadeIn();
