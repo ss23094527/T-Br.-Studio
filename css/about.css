@@ -350,7 +350,7 @@ background: url(facebook.png);
   line-height: 44px;
   text-align: center;
   letter-spacing: 0.095em;
-  
+  animation: moveToLeft 1s ease-in-out;
   color: #FFFFFF;
 }
 
@@ -360,7 +360,7 @@ width: 300px;
 height: 300px;
 left: 807px;
 top: 750px;
-
+animation: moveToLeft 1s ease-in-out;
 
 }
 
@@ -448,7 +448,7 @@ text-align: center;
 letter-spacing: 0.095em;
 
 color: #FFFFFF;
-
+animation: moveToRight 1s ease-in-out;
 }
 
 .browncofe-icon{
@@ -457,8 +457,8 @@ width: 300px;
 height: 300px;
 left: 110px;
 top: 1308px;
+animation: moveToRight 1s ease-in-out;
 
-background: url(image.png);
 
 }
 
@@ -466,6 +466,24 @@ background: url(image.png);
   transform:translateY(-20px) scale(1);
   opacity: 1;
   transition: .6s;
+}
+
+@keyframes moveToRight {
+  0% {
+      transform: translateX(-270px);
+  }
+  100% {
+      transform: translateX(0px);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+      transform: translateX(270px);
+  }
+  100% {
+      transform: translateX(0px);
+  }
 }
 
 .twitter{
@@ -568,7 +586,7 @@ color: #FFFFFF;
   float:left;
   width:800px;
   border:0px;
-  color:#F1F1F1;
+  color:#585555;
   padding:10px 10px 10px 30px;
   font: 11px/20px 'Noto Serif TC', Verdana, Helvetica, sans-serif;
   margin-bottom:10px;
@@ -580,7 +598,7 @@ color: #FFFFFF;
   height:140px;
   padding:10px 10px 10px 30px;
   font: 11px/20px 'Noto Serif TC', Verdana, Helvetica, sans-serif;
-  color:#ffffff;
+  color:#585555;
   resize: none;
 }
 #contact #form input.name {
@@ -606,6 +624,8 @@ color: #FFFFFF;
   color:#F1F1F1;
   font: 14px/16px'adamina';
 }
+
+
 
 
 #contact #captcha span{
@@ -642,6 +662,7 @@ text-align: center;
 letter-spacing: 0.14em;
 
 color: #FFFFFF;
+animation: fadein 2s ease-in;
 
 }
 
@@ -663,7 +684,7 @@ text-align: center;
 letter-spacing: 0.14em;
 
 color: #FFFFFF;
-
+animation: fadein 2s ease-in;
 }
 
 .totoru-phone{
@@ -684,6 +705,7 @@ text-align: center;
 letter-spacing: 0.14em;
 
 color: #FFFFFF;
+animation: fadein 2s ease-in;
 }
 
 .gmail-t{
@@ -692,6 +714,7 @@ width: 30px;
 height: 30px;
 left: 300px;
 top: 2515px;
+animation: fadein 2s ease-in;
 }
 
 .phone-t{
@@ -700,8 +723,8 @@ top: 2515px;
   height: 30px;
   left: 300px;
 top: 2555px;
+animation: fadein 2s ease-in;
 
-background: url(S__16113668.png);
 }
 
 .browncofe-inform{
@@ -742,7 +765,7 @@ text-align: center;
 letter-spacing: 0.14em;
 
 color: #FFFFFF;
-
+animation: fadein 2s ease-in;
 }
 
 .browncofe-phone{
@@ -763,7 +786,7 @@ text-align: center;
 letter-spacing: 0.14em;
 
 color: #FFFFFF;
-
+animation: fadein 2s ease-in;
 }
 
 .gmail-b{
@@ -773,8 +796,8 @@ color: #FFFFFF;
   left: 770px;
 top: 2510px;
 
-background: url(S__16113671.png);
 
+animation: fadein 2s ease-in;
 }
 
 .phone-b{
@@ -783,8 +806,8 @@ background: url(S__16113671.png);
   height: 30px;
   left: 770px;
 top: 2550px;
+animation: fadein 2s ease-in;
 
-background: url(S__16113668.png);
 }
 
 /*footer */
@@ -865,9 +888,9 @@ background: url(S__16113668.png);
   .footer-copyright{
     
     color: #ffffff;
-  margin-left: 550px;
+  margin-left: 570px;
   margin-top: 20px;
-  font-size: 13px;
+  font-size: 15px;
   width: auto;
     text-transform: capitalize;
   }

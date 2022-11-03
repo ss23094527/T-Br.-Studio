@@ -3,34 +3,64 @@
 $(document).scroll(function () {
     let y = $(this).scrollTop();
 
-	if (y > 20 ) {
-        $('.about-us-inform').fadeIn();
-      
-    } else {
-		$('.about-us-inform').fadeOut();
-        
-    }
+	
 
 
-    if (y > 300 ) {
+    if (y > 450 ) {
         $('.totoru-introduce').fadeIn();
+		$('.head-icon-t').fadeIn();
+		$('.totoru').fadeIn();
       
     } else {
 		$('.totoru-introduce').fadeOut();
-        
+		$('.head-icon-t').fadeOut();
+		$('.totoru').fadeOut();
     }
 
-	
+
+
 
 	if (y > 900 ) {
         $('.browncofe-introduce').fadeIn();
+		$('.browncofe-icon').fadeIn();
+		$('.browncofe').fadeIn();
 	
       
     } else {
 		$('.browncofe-introduce').fadeOut();
+		$('.browncofe-icon').fadeOut();
+		$('.browncofe').fadeOut();
 
         
     }
+
+
+	if (y > 2000 ) {
+        $('.totoru-inform').fadeIn();
+		$('.totoru-gmail').fadeIn();
+		$('.totoru-phone').fadeIn();
+		$('.gmail-t').fadeIn();
+		$('.phone-t').fadeIn();
+		$('.browncofe-inform').fadeIn();
+		$('.browncofe-gmail').fadeIn();
+		$('.browncofe-phone').fadeIn();
+		$('.gmail-b').fadeIn();
+		$('.phone-b').fadeIn();
+	
+      
+    } else {
+		$('.totoru-inform').fadeOut();
+		$('.totoru-gmail').fadeOut();
+		$('.totoru-phone').fadeOut();
+		$('.gmail-t').fadeOut();
+		$('.phone-t').fadeOut();
+		$('.browncofe-inform').fadeOut();
+		$('.browncofe-gmail').fadeOut();
+		$('.browncofe-phone').fadeOut();
+		$('.gmail-b').fadeOut();
+		$('.phone-b').fadeOut();
+    }
+
 
 
 

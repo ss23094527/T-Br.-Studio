@@ -68,4 +68,16 @@ $(document).scroll(function () {
     }
 
     
+
+
+//作品圖飛入
+
+
+if (y > 850) {
+	$('.item').fadeIn();
+} else {
+	$('.item').fadeOut();
+}
+
+
 });
