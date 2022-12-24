@@ -1,83 +1,49 @@
-
-
-
- // go to top
-jQuery(document).ready(function($) {
-	
-	$('.top').click(function(event) {
-		event.preventDefault();
-
-		$('html, body').animate({
-			scrollTop: 0
-		},
-			1000);
-	});
-
-});
-
-
-
  // loading animation
-$(window).on('load', function() { // makes sure the whole site is loaded 
-	$('#status').fadeOut(); // will first fade out the loading animation 
-	$('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-	$('body').delay(250).css({'overflow':'visible'});
-  })
+ window.onload = function() {
+  $(".loading").fadeOut();  
+ }
 
-  $(document).ready(function() {
-	$('#fullpage').fullpage();
+
+
+
+
+$(function() {
+
+  var wow = new WOW(
+    {
+      boxClass:     'wow',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+      animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+      offset:       0,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+      mobile:       true,       // 手機上是否要套用動畫 (預設是true)
+      live:         true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+      callback:     function(box) {
+        // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+      },
+      scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+    }
+  );
+  wow.init();
+
 });
 
-//文字飛入
-$(document).scroll(function () {
-    let y = $(this).scrollTop();
-    if (y > 150 ) {
-        $('.painters').fadeIn();
-      
-    } else {
-		$('.painters').fadeOut();
-        
-    }
-
-	if (y > 400 ) {
-        $('.painter-icon-A').fadeIn();
-		$('.painter-icon-B').fadeIn();
-      
-    } else {
-		$('.painter-icon-A').fadeOut();
-		$('.painter-icon-B').fadeOut();
-        
-    }
-
-	if (y > 600 ) {
-        $('.about_title').fadeIn();
-		$('.about_title2').fadeIn();
-      
-    } else {
-		$('.about_title').fadeOut();
-		$('.about_title2').fadeOut();
-        
-    }
 
 
 
-    if (y > 780) {
-        $('.portfoliotext').fadeIn();
-    } else {
-        $('.portfoliotext').fadeOut();
-    }
-
-    
+//t&br studio
 
 
-//作品圖飛入
 
 
-if (y > 850) {
-	$('.item').fadeIn();
-} else {
-	$('.item').fadeOut();
-}
-
-
+jQuery(document).ready(function($) {
+$(".custom-carousel").owlCarousel({
+    autoWidth: true,
+    loop: true
+  });
+  $(document).ready(function () {
+    $(".custom-carousel .item").click(function () {
+      $(".custom-carousel .item").not($(this)).removeClass("active");
+      $(this).toggleClass("active");
+    });
+  });
+  
 });

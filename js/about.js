@@ -1,117 +1,40 @@
 
-//文字飛入
-$(document).scroll(function () {
-    let y = $(this).scrollTop();
+$(function() {
 
+	var wow = new WOW(
+	  {
+		boxClass:     'wow',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+		animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+		offset:       0,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+		mobile:       true,       // 手機上是否要套用動畫 (預設是true)
+		live:         true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+		callback:     function(box) {
+		  // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+		},
+		scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+	  }
+	);
+	wow.init();
+  
+  });
+
+ // go to top
+ jQuery(document).ready(function($) {
 	
+	$('.top').click(function(event) {
+		event.preventDefault();
 
-	if (y > 360 ) {
-        $('.about-us-card-body').fadeIn();
-		$('.about-us-container-text').fadeIn();
-		
-      
-    } else {
-		$('.about-us-card-body').fadeOut();
-		$('.about-us-container-text').fadeOut();
-	
-    }
+		$('html, body').animate({
+			scrollTop: 0
+		},
+			1000);
+	});
 
-	if (y > 650 ) {
-        $('.commision-page-body1').fadeIn();
-		
-	
-		
-      
-    } else {
-		$('.commision-page-body1').fadeOut();
-	
-	
-    }
-
-
-	if (y > 800 ) {
-        $('.commision-page-body2').fadeIn();
-	
-		
-      
-    } else {
-		$('.commision-page-body2').fadeOut();
-	
-	
-    }
-
-	if (y > 900 ) {
-        $('.commision-page-body3').fadeIn();
-	
-		
-      
-    } else {
-		$('.commision-page-body3').fadeOut();
-	
-	
-    }
-
-    if (y > 2550 ) {
-        $('.totoru-introduce').fadeIn();
-		$('.head-icon-t').fadeIn();
-		$('.totoru').fadeIn();
-
-      
-    } else {
-		$('.totoru-introduce').fadeOut();
-		$('.head-icon-t').fadeOut();
-		$('.totoru').fadeOut();
-    }
-
-
-
-
-	if (y > 3050 ) {
-        $('.browncofe-introduce').fadeIn();
-		$('.browncofe-icon').fadeIn();
-		$('.browncofe').fadeIn();
-	
-      
-    } else {
-		$('.browncofe-introduce').fadeOut();
-		$('.browncofe-icon').fadeOut();
-		$('.browncofe').fadeOut();
-
-        
-    }
-
-
-	if (y > 4500 ) {
-        $('.totoru-inform').fadeIn();
-		$('.totoru-gmail').fadeIn();
-		$('.totoru-phone').fadeIn();
-		$('.gmail-t').fadeIn();
-		$('.phone-t').fadeIn();
-		$('.browncofe-inform').fadeIn();
-		$('.browncofe-gmail').fadeIn();
-		$('.browncofe-phone').fadeIn();
-		$('.gmail-b').fadeIn();
-		$('.phone-b').fadeIn();
-	
-      
-    } else {
-		$('.totoru-inform').fadeOut();
-		$('.totoru-gmail').fadeOut();
-		$('.totoru-phone').fadeOut();
-		$('.gmail-t').fadeOut();
-		$('.phone-t').fadeOut();
-		$('.browncofe-inform').fadeOut();
-		$('.browncofe-gmail').fadeOut();
-		$('.browncofe-phone').fadeOut();
-		$('.gmail-b').fadeOut();
-		$('.phone-b').fadeOut();
-    }
-
-
-
-
-    
 });
+
+//lottie
+
+
 
 //contact us
 function captchaCode() {
