@@ -8,13 +8,16 @@
       url('../fonts/Cubic.woff') format("woff");
 }
 
+html{
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1138.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1138.png), auto;
+}
 
 .body {
   
   width: 100%;
   margin: 0;
   padding: 0;
-  cursor: url('https://cur.cursors-4u.net/special/spe-2/spe114.cur'), pointer;
+  
 }
 
 /*往上按鈕*/
@@ -317,6 +320,8 @@
 
 }
 
+
+
 /*在這裡你可以...*/
 
 .about-can {
@@ -341,7 +346,7 @@
   opacity: 1;
   transition: .6s;
   color: #9b9b97;
-  cursor: pointer;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.png), pointer;
 
 }
 

@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 	<link href="css/main.css" rel="stylesheet">
-	
+
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
 	<link rel='stylesheet'
 		href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
@@ -31,6 +31,8 @@
 
 <body class="bg-gradient">
 
+	
+
 	<!--loading-->
 	<div class="loading">
 
@@ -42,7 +44,7 @@
 		<div style="--x:5"></div>
 	</div>
 
-	
+
 
 	<!-- Back to top button -->
 	<div class="top">
@@ -143,15 +145,33 @@
 				<div class="entire-content">
 					<div class="content-carrousel">
 
-						<figure class="shadow"><img src="https://img.onl/ZYXJf8" /><figcaption>遊戲插圖</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/jtp7R2" /><figcaption>角色設計</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/ChPHO" /><figcaption>節日賀卡</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/VyQzVZ" /><figcaption>生日賀卡</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/PaYnRM" /><figcaption>雙人半身插畫</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/SWnMbm" /><figcaption>單人半身插畫</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/WiNAaY" /><figcaption>Q版插畫</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/9nRTge" /><figcaption>正比頭像</figcaption></figure>
-						<figure class="shadow"><img src="https://img.onl/UEludQ" /><figcaption>精緻插畫</figcaption></figure>
+						<figure class="shadow" ><img src="https://img.onl/ZYXJf8" />
+							<figcaption>遊戲插圖</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/jtp7R2" />
+							<figcaption>角色設計</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/ChPHO" />
+							<figcaption>節日賀卡</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/VyQzVZ" />
+							<figcaption>生日賀卡</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/PaYnRM" />
+							<figcaption>雙人半身插畫</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/SWnMbm" />
+							<figcaption>單人半身插畫</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/WiNAaY" />
+							<figcaption>Q版插畫</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/9nRTge" />
+							<figcaption>正比頭像</figcaption>
+						</figure>
+						<figure class="shadow"><img src="https://img.onl/UEludQ" />
+							<figcaption>精緻插畫</figcaption>
+						</figure>
 					</div>
 				</div>
 			</section>
@@ -301,12 +321,12 @@
 		<div class="container">
 			<div class="row">
 				<div id="carouselExampleControls" class="wow animate__animated animate__fadeInLeft carousel slide"
-					data-bs-ride="carousel">
+					data-bs-ride="carousel"  style="cursor: pointer;">
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item active"onclick="location.href='commision.html'">
 							<img src="img/banner 1.png" class="d-block w-100 rounded" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item"onclick="location.href='commision.html'">
 							<img src="img/banner2.png" class="d-block w-100 rounded" alt="...">
 						</div>
 
@@ -433,9 +453,26 @@
 					"position": "onBottom"
 
 				},
-				"thumbnailMargin": 300,
+				galleryDisplayMode: 'fullContent',
+				gallerySorting: 'random',
+				"thumbnailMargin": 500,
 				"thumbnailHeight": "auto",
 				"thumbnailWidth": 300,
+				"colorScheme": {
+					"thumbnail": {
+						"borderColor": "rgba(255,255,255,1)"
+					}
+				},
+
+
+				// 展示動畫
+				thumbnailDisplayTransition: 'slideDown',
+				thumbnailDisplayTransitionDuration: 500,
+				thumbnailDisplayInterval: 30,
+				// hover 動畫
+				thumbnailHoverEffect2: 'image_scale_1.00_1.10|tools_opacity_0_1|tools_translateY_30px_0px',
+				touchAnimation: true,
+				touchAutoOpenDelay: 800,
 
 
 
@@ -444,69 +481,73 @@
 				items: [{
 					src: "https://img.onl/VwgxtJ",
 					srct: "https://img.onl/VwgxtJ",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/clRJpf",
 					srct: "https://img.onl/clRJpf",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/0zK5w",
 					srct: "https://img.onl/0zK5w",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/u80Ze4",
 					srct: "https://img.onl/u80Ze4",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/ZlXcML",
 					srct: "https://img.onl/ZlXcML",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/jvlGc0",
 					srct: "https://img.onl/jvlGc0",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/B0Hudi",
 					srct: "https://img.onl/B0Hudi",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/uhusUu",
 					srct: "https://img.onl/uhusUu",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/1Trbx6",
 					srct: "https://img.onl/1Trbx6",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/b9thrb",
 					srct: "https://img.onl/b9thrb",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/X6f99T",
 					srct: "https://img.onl/X6f99T",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/QI1hZb",
 					srct: "https://img.onl/QI1hZb",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/UUK0j7",
 					srct: "https://img.onl/UUK0j7",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/r8TycU",
 					srct: "https://img.onl/r8TycU",
-					title: "TOTORU"
+					title: "多綠Totoru"
 				}, {
 					src: "https://img.onl/RbuEPo",
 					srct: "https://img.onl/RbuEPo",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}, {
 					src: "https://img.onl/D6v2Am",
 					srct: "https://img.onl/D6v2Am",
-					title: "BROWNCAFE"
+					title: "布朗Browncafe"
 				}]
+
+
 			});
+
+
 		</script>
 
 

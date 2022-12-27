@@ -8,13 +8,20 @@
       url('../fonts/Cubic.woff') format("woff");
 }
 
+html{
+cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1138.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1138.png), auto !important;
+
+
+}
+
+
 
 .body {
   width: 100%;
   margin: 0;
   padding: 0;
 
-  cursor: url('https://cur.cursors-4u.net/special/spe-2/spe114.cur'), pointer;
+
 }
 
 
@@ -210,10 +217,13 @@
 /*navbar*/
 
 .navbar{
+  
   font-family: 'Cubic';
   font-size: 16px;
   
 }
+
+
 
 .navbar-nav .nav-item .nav-link {
   color: rgb(96, 92, 92);
@@ -332,27 +342,30 @@
 }
 
 figure {
- 
+  border-style: dotted;
+  border-width: 1.5px; 
+  border-radius: 5rem 50px 30% 50%;
   border-color:#fff ;
   display: flex;
   flex-flow: column;
   padding: 0px;
   max-width: 220px;
   margin: auto;
+  
 
 }
 
 figcaption {
-  border-radius: 10%;
-  background-color: rgba(255, 255, 255, 0.263);
-  backdrop-filter: blur(5px);
  
+  background-color: rgba(62, 61, 61, 0.178);
+  backdrop-filter: blur(5px);
+ border-radius: 10%;
   font-size: 8px;
   font-weight: 400;
   margin-left: 35%;
   margin-top: 45%;
   position: absolute;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-family:'Cubic';
   padding: 0px;
   text-align: center;
@@ -395,7 +408,7 @@ figcaption {
 }
 
 .content-carrousel {
-
+ 
   width: 100%;
   position: absolute;
   float: right;
@@ -406,10 +419,11 @@ figcaption {
 .content-carrousel:hover {
   animation-play-state: paused;
   
-  cursor: pointer;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.png), pointer;
 }
 
 .content-carrousel figure {
+  border-radius: 5%;
   width: 100%;
   height: 120px;
 
@@ -468,7 +482,7 @@ figcaption {
   transition: all 300ms;
   width: 100%;
   height: 100%;
-  border-radius: 10%;
+  
 }
 
 
@@ -722,9 +736,9 @@ figcaption {
 
 .icon :hover {
 
-  cursor: pointer;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.png), pointer;
   transform: translateY(-5px) scale(1);
-  opacity: 1;
+  opacity: 0.7;
   transition: .6s;
 }
 
@@ -821,7 +835,7 @@ h3 {
   position: relative;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
-  cursor: pointer;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1148.png), pointer;
 }
 
 .game-section .item.active {
@@ -1064,14 +1078,17 @@ h3 {
 }
 
 
+
 /*瀑布圖*/
 
 #nanogallery2 {
   margin: 40px;
+  font-family: 'Cubic';
 }
 
 /*gotostore*/
 .gotostore {
+  
   font-family: 'Cubic';
   margin-left: 40%;
   margin-bottom: 40px;
