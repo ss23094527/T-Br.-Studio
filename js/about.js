@@ -1,4 +1,4 @@
-
+jQuery(document).ready(function($) {
 $(function() {
 
 	var wow = new WOW(
@@ -17,6 +17,8 @@ $(function() {
 	wow.init();
   
   });
+	
+});
 
  // go to top
  jQuery(document).ready(function($) {
